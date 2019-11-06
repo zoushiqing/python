@@ -2,7 +2,7 @@ import socket
 
 server = socket.socket()
 # 绑定要监听的端口
-server.bind(("", 6969))
+server.bind(("192.168.199.100", 6969))
 
 server.listen()  # 监听
 
