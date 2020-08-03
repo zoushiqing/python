@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://baidu.com" method="get">
+    <h1>用户注册</h1>
+    <div>
+        <label for="username">用户名：</label><input type="text" name="name" id="username">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>密码：</label><input type="password" name="password">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="0" id="man"><label for="man">男</label>
+        <input type="radio" name="gender" value="0">女
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>爱好：</label>
+        <input type="checkbox" name="like" value="game">游戏
+        <input type="checkbox" name="like" value="walk">散步
+        <input type="checkbox" name="like" value="drink">喝酒
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>籍贯：</label>
+        <select>
+            <option>四川</option>
+            <option>北京</option>
+            <option>美国</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>照片：</label>
+        <input type="file" name="pic">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>个人描述</label>
+        <textarea></textarea>
+    </div>
+    <br>
+    <br>
+    <!--    用一张图片作为提交按钮-->
+    <input type="image" src="001.jpg">
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+</form>
+</body>
+</html>
