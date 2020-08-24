@@ -1,0 +1,309 @@
+body {
+    font-family: 'Microsoft Yahei';
+    color: #666666;
+    font-size: 12px;
+}
+
+/*顶部状态条样式*/
+.header_con {
+    height: 29px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #dddddd;
+}
+
+.header {
+    width: 1200px;
+    height: 29px;
+    margin: 0 auto;
+}
+
+.welcome {
+    font: 12px/29px 'Microsoft Yahei';
+    color: #666666;
+}
+
+.user_login_link, .user_welcome, .user_shopping {
+    height: 29px;
+    line-height: 29px;
+}
+
+.user_login_link a, .user_shopping a {
+    color: #666666;
+}
+
+.user_login_link a:hover, .user_shopping a:hover {
+    color: #ff8800;
+}
+
+.user_login_link span, .user_shopping span {
+    margin: 0 15px;
+    color: #cecece;
+}
+
+.user_welcome {
+    display: none;
+}
+
+.user_welcome em {
+    color: #ff8800;
+}
+
+/*logo,搜索，购物车样式*/
+.logo_bar {
+    width: 1200px;
+    height: 115px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 151px;
+    height: 59px;
+    margin: 29px 0 0 17px;
+}
+
+.search {
+    width: 616px;
+    height: 38px;
+    border: 1px solid #37ab40;
+    margin: 34px 0 0 123px;
+}
+
+.search .input_text {
+    width: 470px;
+    height: 38px;
+    border: 0px;
+    margin-left: 37px;
+    outline: none;
+}
+
+.search .input_btn {
+    width: 100px;
+    height: 38px;
+    background-color: #37ab40;
+    border: 0;
+    font: 14px/38px 'Microsoft Yahei';
+    color: #fff;
+    cursor: pointer;
+}
+
+.chart {
+    width: 200px;
+    height: 40px;
+    margin-top: 34px;
+}
+
+.chart_text {
+    width: 158px;
+    border: 1px solid #dddddd;
+    background-color: #f7f7f7;
+}
+
+.chart a {
+    height: 38px;
+    font: 14px/38px 'Microsoft Yahei';
+    color: #37ab40;
+    margin-left: 10px;
+    display: block;
+    line-height: 38px;
+}
+
+.chart img {
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.chart span {
+    width: 40px;
+    height: 40px;
+    background-color: #f80;
+    font: bold 19px/40px 'Microsoft Yahei';
+    color: #ffffff;
+    text-align: center;
+}
+
+.sub_menu_con {
+    height: 40px;
+    border-bottom: 2px solid #37ab40;
+}
+
+.sub_menu_s {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.sub_menu_s h1 {
+    width: 200px;
+    height: 40px;
+    font: 14px/40px 'Microsoft Yahei';
+    background-color: #37ab40;
+    color: white;
+    text-align: center;
+}
+
+.sub_menu_s ul {
+    overflow: hidden;
+}
+
+.sub_menu_s li {
+    float: left;
+    height: 14px;
+    padding: 0 25px;
+    border-left: 1px solid #666666;
+    margin-left: -1px;
+    margin-top: 13px;
+}
+
+.sub_menu_s li a {
+    font: 14px/14px 'Microsoft Yahei';
+    color: #666666;
+}
+
+.sub_menu_s li a:hover {
+    color: #37ab40;
+}
+
+.center_con {
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.center_con .main_menu {
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.center_con .main_menu li {
+    width: 198px;
+    height: 44px;
+    border: 1px solid #eeeeee;
+    margin-top: -1PX;
+}
+
+.center_con .main_menu li a {
+    display: block;
+    line-height: 44px;
+    text-indent: 71px;
+    font: 14px/44px 'Microsoft Yahei';
+    color: #333333;
+}
+
+.center_con .main_menu li a:hover {
+    color: #37ab40;
+}
+
+.slide_con {
+    width: 760px;
+    height: 270px;
+    position: relative;
+}
+
+.slide_con ul li a img {
+    width: 760px;
+    height: 270px;
+}
+
+.pre img {
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    left: 11px;
+    top: 122px;
+    cursor: pointer;
+}
+
+.next img {
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    left: 732px;
+    top: 122px;
+    cursor: pointer;
+}
+
+.points {
+    position: absolute;
+    width: 100%;
+    height: 11px;
+    left: 0;
+    bottom: 9px;
+    text-align: center;
+    font-size: 0px;
+}
+
+.points li {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.points .active {
+    background-color: #cecece;
+}
+
+.adv {
+    width: 240px;
+    height: 270px;
+}
+
+.adv a img {
+    width: 240px;
+    height: 135px;
+    display: block;
+}
+
+.common_title {
+
+}
+
+.common_title ul li {
+    float: left;
+}
+
+/*登录页样式*/
+.login_header {
+    width: 953px;
+    height: 133px;
+    margin: 0 auto;
+}
+
+.login_header a img,.login_header a {
+    width: 200px;
+    height: 100%;
+}
+.login_header a{
+    display:block;
+    margin-top: 28px;
+}
+.login_form_con{
+    height: 482px;
+    background-color: #518e17;
+}
+.login_form{
+    width: 952px;
+    height: 482px;
+    margin: 0 auto;
+}
+.login_form img{
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin: 92px 0 0 15px;
+}
+.login_form p{
+    color: white;
+    width: 30px;
+    font-size: 30px;
+    height: 300px;
+    text-align: center;
+    float: left;
+    margin: 100px 0 0 114px;
+    line-height: 36px;
+}
