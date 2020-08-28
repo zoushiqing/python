@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto 0;
+            background-color: gold;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            transform: perspective(800px) rotateX(0deg);
+        }
+        /**
+        注意：
+        y轴是向下的
+        轴向对着自己的顺时针方向，就是该动画的旋转方向
+         */
+        .box:hover{
+            transform: perspective(800px) rotateX(30deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

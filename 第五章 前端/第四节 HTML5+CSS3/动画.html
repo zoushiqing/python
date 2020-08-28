@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /*transition: width 500ms ease,height 500ms ease 500ms,background-color 500ms ease 500ms;*/
+            transition: all 500ms ease 1s
+        }
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

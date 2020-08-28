@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            margin: 50px;
+            float: left;
+            transition: all 1s ease;
+        }
+
+        div:nth-child(1) {
+            transform-origin: left center;
+        }
+
+        div:nth-child(2) {
+            transform-origin: left top;
+        }
+
+        div:nth-child(3) {
+            transform-origin: 0px 0px;
+        }
+
+        div:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

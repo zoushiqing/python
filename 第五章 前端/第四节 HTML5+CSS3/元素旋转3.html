@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto 0;
+            background-color: gold;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            transform-style: preserve-3d;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 1s ease;
+        }
+
+        body:hover .box{
+            transform: perspective(800px) rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

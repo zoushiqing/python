@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        ul li{
+            background-color: gold;
+            margin-bottom: 10px;
+        }
+        /*倒着第二个 */
+        li:nth-last-child(2){
+            background-color: green;
+        }
+        .box p:only-child{
+            background-color: red;
+        }
+        div:empty{
+            background-color: greenyellow;
+            height: 10px;
+        }
+        input:disabled{
+            background-color: coral;
+        }
+        .boxbox{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+        input:checked+div{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <div class="box">
+        <p>我是一个P标签</p>
+    </div>
+    <div></div>
+    <input type="text" name="" disabled="disabled"/>
+    <input type="text" name=""/>
+    <input type="checkbox" />
+    <div class="boxbox">这是一个divboboxboxx</div>
+</ul>
+</body>
+</html>
