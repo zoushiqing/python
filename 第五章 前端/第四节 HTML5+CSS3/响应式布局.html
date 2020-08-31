@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式</title>
+    <style type="text/css">
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            overflow: hidden;
+        }
+
+        li {
+            background-color: gold;
+            float: left;
+            width: 23%;
+            height: 50px;
+            margin: 1%;
+            list-style: none;
+        }
+        /*小于700像素的时候就变成两个*/
+        @media (max-width: 700px) {
+            li {
+                width: 46%;
+                margin: 2%;
+            }
+        }
+        @media (max-width: 500px) {
+            li {
+                width: 90%;
+                margin: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</body>
+</html>

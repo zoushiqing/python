@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box {
+            width: 300px;
+            height: 70px;
+            border: 1px solid #000000;
+            margin: 80px auto 0;
+        }
+
+        .box div {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+            float: left;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+
+        .box div:nth-child(1) {
+            background-color: gold;
+            animation: loading 700ms ease 0s infinite alternate;
+        }
+        .box div:nth-child(2) {
+            background-color: greenyellow;
+            animation: loading 700ms ease 100ms infinite alternate;
+        }
+        .box div:nth-child(3) {
+            background-color: red;
+            animation: loading 700ms ease 200ms infinite alternate;
+        }
+        .box div:nth-child(4) {
+            background-color: blue;
+            animation: loading 700ms ease 300ms infinite alternate;
+        }
+        .box div:nth-child(5) {
+            background-color: pink;
+            animation: loading 700ms ease 400ms infinite alternate;
+        }
+
+        @keyframes loading {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>

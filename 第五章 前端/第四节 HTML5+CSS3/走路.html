@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box {
+            width: 313px;
+            height: 480px;
+            overflow: hidden;
+            margin: 80px auto 0;
+            border: 1px solid #000000;
+            position: relative;
+        }
+
+        .box img {
+            left: 0;
+            top: 0;
+            position: absolute;
+            animation: moving 1s steps(8) infinite;
+        }
+
+        @keyframes moving {
+            from {
+                left: 0;
+            }
+            to {
+                left: -2504px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="box"><img src="走路.png"></div>
+</body>
+</html>

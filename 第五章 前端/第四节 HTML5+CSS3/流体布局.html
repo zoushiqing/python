@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!--    所谓的流体布局
+就是高度自适应
+宽度做百分比-->
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            margin: 0;
+            padding: 0;
+            height: 50px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            /*第一种设置宽度超出布局的问题*/
+            /*width: calc(25% - 4px);*/
+            width: 25%;
+            height: 50px;
+            float: left;
+            background-color: gold;
+            text-align: center;
+            line-height: 50px;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li>菜单1</li>
+    <li>菜单2</li>
+    <li>菜单3</li>
+    <li>菜单4</li>
+</ul>
+</body>
+</html>
