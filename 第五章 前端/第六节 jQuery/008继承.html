@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function FClass(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        FClass.prototype.showName = function () {
+            alert(this.name)
+        }
+        FClass.prototype.showAge = function () {
+            alert(this.age)
+        }
+
+        /**
+         * 集成属性的方式  使用个call
+         * @param name
+         * @param age
+         * @param job
+         * @constructor
+         */
+        function SClass(name, age, job) {
+            FClass.call(this, name, age)
+            this.job=job
+        }
+
+        /**
+         * 集成函数的方式  使用一个原型=new 父类()
+         * @type {FClass}
+         */
+        SClass.prototype = new FClass()
+
+        SClass.prototype.showJob = function () {
+            alert(this.job)
+        }
+
+        var sClass = new SClass('Tom', 12, 'Worker')
+        sClass.showName()
+        sClass.showAge()
+        sClass.showJob()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

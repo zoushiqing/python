@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload=function () {
+            var oDiv=document.getElementById('box')
+            var attr='color'
+            //通过[]  操作属性可以写变量
+            oDiv.style[attr]='red'
+            //读取元素包裹的内容
+            alert(oDiv.innerHTML)
+
+            var oDiv2=document.getElementById('box2')
+            // oDiv2.innerHTML='这是第2个div'
+            oDiv2.innerHTML="<a href='http://wwww.baidu.com'>百度</a>"
+        }
+    </script>
+</head>
+<body>
+<div id="box">这是一个div</div>
+<div id="box2"></div>
+</body>
+</html>

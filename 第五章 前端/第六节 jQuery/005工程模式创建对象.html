@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Person(name, age, job) {
+            var o = new Object()
+            o.name = name
+            o.age = age
+            o.job = job
+            o.shoName=function () {
+                alert(this.name)
+            }
+            o.showAge=function () {
+                alert(this.age)
+            }
+            o.showJob=function () {
+                alert(this.job)
+            }
+            return o
+        }
+        var person=Person('Tom',12,'律师')
+        var jack=Person('Jack',23,'Bitch')
+        person.shoName()
+        jack.showJob()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

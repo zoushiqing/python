@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        ul li {
+            width: 100%;
+            height: 40px;
+            background-color: gold;
+            margin: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var oElements = document.getElementsByTagName('li')
+            for (var i = 0; i < oElements.length; i++) {
+                (function (i) {
+                    oElements[i].onclick = function () {
+                        alert(i)
+                    }
+                })(i)
+
+            }
+        }
+
+        var count = (function () {
+            var a = 0
+
+            function bb() {
+                a++
+                return a
+            }
+            return bb
+        })()
+        count()
+        count()
+        var cc = count()
+        alert(cc)
+    </script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+</html>

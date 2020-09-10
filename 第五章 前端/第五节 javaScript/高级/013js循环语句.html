@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var aLi = document.getElementById('ul1').getElementsByTagName('li')
+
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].style.background = 'gold'
+            }
+
+            //去重
+            var aAr = [1, 2, 3, 4, 5, 5, 6, 2, 4, 6, 7, 3, 3, 4, 5, 8, 4, 3, 1]
+            var aArTemp = []
+            for (var i = 0; i < aAr.length; i++) {
+                if (aAr.indexOf(aAr[i]) == i) {
+                    aArTemp.push(aAr[i])
+                }
+            }
+            alert(aArTemp)
+        }
+
+
+    </script>
+</head>
+<body>
+<ul id="ul1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</body>
+</html>

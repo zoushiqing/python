@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            timego()
+            setInterval(timego, 1000)
+        };
+
+        function timego() {
+            const oDiv = document.getElementById('div');
+            const now = new Date();
+            const year = now.getFullYear();
+            //月份是 0-11  所以得加1
+            const month = now.getMonth()+1;
+            const date = now.getDate();
+            //0-6  0是星期天
+            const week = now.getDay();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const second = now.getSeconds();
+            oDiv.innerHTML = '当前时间是：' + year + '年' + todou(month) + '月' + todou(date) + '日 ' + toweek(week) + ' ' + todou(hour) + ':' + todou(minute) + ':' + todou(second)
+        }
+
+        function toweek(num) {
+            switch (num) {
+                case 0:
+                    return '星期天';
+                case 1:
+                    return '星期一';
+                case 2:
+                    return '星期二';
+                case 3:
+                    return '星期三';
+                case 4:
+                    return '星期四';
+                case 5:
+                    return '星期五';
+                case 6:
+                    return '星期六';
+            }
+        }
+
+        function todou(num) {
+            if (num < 10) {
+                return '0' + num
+            } else {
+                return num
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="div"></div>
+</body>
+</html>

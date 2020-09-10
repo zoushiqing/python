@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Person(age, name, job) {
+            this.age=age
+            this.name=name
+            this.job=job
+        }
+        Person.prototype.showName=function () {
+            alert(this.name)
+        }
+        Person.prototype.showAge=function () {
+            alert(this.age)
+        }
+        Person.prototype.thwoJob=function () {
+            alert(this.job)
+        }
+        var tom=new Person('tom',12,'home')
+        tom.showAge()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

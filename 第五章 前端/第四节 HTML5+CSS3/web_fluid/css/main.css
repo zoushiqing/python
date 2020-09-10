@@ -1,0 +1,38 @@
+.main_wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: gold;
+}
+
+.header {
+    height: 50px;
+    background-color: #37ab40;
+}
+.center_wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50px;
+    bottom: 50px;
+    background-color: cyan;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.footer{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+}
+.header .logo{
+    width: 89px;
+    height: 36px;
+    display: block;
+    margin:7px auto 0;
+    background-color: yellowgreen;
+}

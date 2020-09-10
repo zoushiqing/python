@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            const oDiv = document.getElementById('div');
+            var now = new Date()
+            var future = new Date(2020, 11, 11)
+            var lefts = parseInt((now - future) / 1000)
+            var day = parseInt(lefts / 86400)
+            var hour = parseInt(lefts % 86400 / 3600)
+            var min = parseInt(lefts % 86400 % 3600 / 60)
+            var sec = lefts%60;
+            oDiv.innerHTML = '距离2016年9月12日晚24点还剩下' + day + '天' + hour + '时' + min + '分' + sec + '秒';
+        };
+
+
+        function todou(num) {
+            if (num < 10) {
+                return '0' + num
+            } else {
+                return num
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="div"></div>
+</body>
+</html>

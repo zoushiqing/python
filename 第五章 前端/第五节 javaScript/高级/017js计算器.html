@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('submit').onclick = function () {
+                var oSel = document.getElementById("sle")
+                var index = oSel.selectedIndex
+                var value = oSel.options[index].text
+
+                var a = getInput1Value()
+                var b = getInput2Value()
+
+                if (a == "" || b == "") {
+                    return
+                }
+                switch (value) {
+                    case "+":
+                        alert((a*100 + b*100)/100)
+                        break
+                    case "-":
+                        alert((a*100 - b*100)/100)
+                        break
+                    case "*":
+                        alert(((a*100) * (b*100))/10000)
+                        break
+                    case "/":
+                        alert((a*100) / (b*100))
+                        break
+                }
+
+            }
+        }
+
+        function getInput1Value() {
+            return parseFloat(document.getElementById('input1').value)
+        }
+
+        function getInput2Value() {
+            return parseFloat(document.getElementById('input2').value)
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="text" id="input1">
+<select id="sle">
+    <option>+</option>
+    <option>*</option>
+    <option>-</option>
+    <option>/</option>
+</select>
+<input type="text" id="input2">
+<input type="button" id="submit" value="计算">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("div1").title = "我看到了";
+            let oA = document.getElementById("link1");
+            oA.href = "http://www.baidu.com";
+            oA.title = "去到百度网"
+            alert(oA.id)
+        }
+    </script>
+</head>
+<body>
+<div id="div1" class="div1" style="color: red" title="div元素">这是一个div元素</div>
+<a id="link1" href="#">百度</a>
+</body>
+</html>

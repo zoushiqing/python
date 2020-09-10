@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="1.css" id="link1">
+    <script type="text/javascript">
+        window.onload = function () {
+            var oBtn03 = document.getElementById("onClick03")
+            var oBtn04 = document.getElementById("onClick04")
+            oBtn03.onclick = skin01
+            oBtn04.onclick = skin02
+        }
+
+        function skin01() {
+            var oLink = document.getElementById('link1')
+            oLink.href = '1.css'
+        }
+
+        function skin02() {
+            var oLink = document.getElementById('link1')
+            oLink.href = '2.css'
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="换肤01" onclick="skin01()">
+<input type="button" value="换肤02" onclick="skin02()">
+<input type="button" value="换肤03" id="onClick03">
+<input type="button" value="换肤04" id="onClick04">
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
